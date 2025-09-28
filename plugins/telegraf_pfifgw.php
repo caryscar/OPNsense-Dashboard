@@ -350,7 +350,7 @@ foreach ($gw_array as $gw => $gateway) {
     if (!isset($gwdescr)) {
         $gwdescr = "Unassigned";
     }
-    if (isset($gateway['monitor_disable'])) {
+    if (!isset($gateway['monitor_disable'])) {
         $monitor = "Unmonitored";
     }
 
